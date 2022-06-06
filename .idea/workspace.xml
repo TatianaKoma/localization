@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="698a29ff-77eb-401f-8066-52523a4840fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/localization/Example1LocaleMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/localization/Example2Currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/localization/Example3DateFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/localization/Example4NumberFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/localization/Example5Currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/localization/I18NSample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/localization/NotI18N.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/MessagesBundle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/MessagesBundle_de_DE.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/MessagesBundle_en_US.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/MessagesBundle_fr_FR.properties" afterDir="false" />
-    </list>
+    <list default="true" id="698a29ff-77eb-401f-8066-52523a4840fe" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +24,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -156,7 +136,7 @@
       <workItem from="1654425552119" duration="14954000" />
       <workItem from="1654498041868" duration="619000" />
       <workItem from="1654506794786" duration="1816000" />
-      <workItem from="1654516072245" duration="1632000" />
+      <workItem from="1654516072245" duration="2034000" />
     </task>
     <servers />
   </component>
