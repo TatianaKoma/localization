@@ -4,43 +4,27 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class Example3DateFormat {
-    static public void main(String[] args) {
+public class Example3TimeDateStyles {
+    public static void main(String[] args) {
 
-        Locale[] locales = {new Locale("fr", "FR"), new Locale("de", "DE"),
-                new Locale("en", "US")};
-
-        for (int i = 0; i < locales.length; i++) {
-            displayDate(locales[i]);
-        }
-
-        showDateStyles(new Locale("en", "US"));
-        showDateStyles(new Locale("fr", "FR"));
-
+        System.out.println("Time style :");
         showTimeStyles(new Locale("en", "US"));
         showTimeStyles(new Locale("de", "DE"));
+        System.out.println("---------");
 
+        System.out.println("\nDate styles: ");
+        showDateStyles(new Locale("en", "US"));
+        showDateStyles(new Locale("fr", "FR"));
+        System.out.println("---------");
+
+        System.out.println("\nTime and date styles: ");
         showBothStyles(new Locale("en", "US"));
         showBothStyles(new Locale("fr", "FR"));
-
     }
 
-    static public void displayDate(Locale currentLocale) {
-        Date today;
-        String dateOut;
-        DateFormat dateFormatter;
+    static public void showTimeStyles(Locale currentLocale) {
 
-        dateFormatter = DateFormat.getDateInstance(DateFormat.DEFAULT,
-                currentLocale);
-        today = new Date();
-        dateOut = dateFormatter.format(today);
-
-        System.out.println(dateOut + "   " + currentLocale.toString());
-    }
-
-    static public void showBothStyles(Locale currentLocale) {
-
-        Date today;
+        Date today = new Date();
         String result;
         DateFormat formatter;
 
@@ -51,11 +35,8 @@ public class Example3DateFormat {
         System.out.println("Locale: " + currentLocale.toString());
         System.out.println();
 
-        today = new Date();
-
-        for (int k = 0; k < styles.length; k++) {
-            formatter = DateFormat.getDateTimeInstance(styles[k], styles[k],
-                    currentLocale);
+        for (int style : styles) {
+            formatter = DateFormat.getTimeInstance(style, currentLocale);
             result = formatter.format(today);
             System.out.println(result);
         }
@@ -74,16 +55,16 @@ public class Example3DateFormat {
         System.out.println("Locale: " + currentLocale.toString());
         System.out.println();
 
-        for (int k = 0; k < styles.length; k++) {
-            formatter = DateFormat.getDateInstance(styles[k], currentLocale);
+        for (int style : styles) {
+            formatter = DateFormat.getDateInstance(style, currentLocale);
             result = formatter.format(today);
             System.out.println(result);
         }
     }
 
-    static public void showTimeStyles(Locale currentLocale) {
+    static public void showBothStyles(Locale currentLocale) {
 
-        Date today = new Date();
+        Date today;
         String result;
         DateFormat formatter;
 
@@ -94,8 +75,11 @@ public class Example3DateFormat {
         System.out.println("Locale: " + currentLocale.toString());
         System.out.println();
 
-        for (int k = 0; k < styles.length; k++) {
-            formatter = DateFormat.getTimeInstance(styles[k], currentLocale);
+        today = new Date();
+
+        for (int style : styles) {
+            formatter = DateFormat.getDateTimeInstance(style, style,
+                    currentLocale);
             result = formatter.format(today);
             System.out.println(result);
         }

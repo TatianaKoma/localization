@@ -5,8 +5,7 @@ import java.util.Locale;
 
 public class Example5Currency {
     public static void main(String[] args) {
-
-        double payment = 125.00;//I can get here only $ correctly
+        double payment = 125.00;
 
         String us = NumberFormat.getCurrencyInstance(Locale.US).format(payment);
         String india = NumberFormat.getCurrencyInstance(new Locale("en", "IN")).format(payment);

@@ -5,26 +5,20 @@ import java.util.Locale;
 
 public class Example4NumberFormat {
     public static void main(String[] args) {
-//        Locale.setDefault(Locale.US);
+        Locale.setDefault(Locale.US);
         double number = 123.4567;
-        Locale locFR = new Locale("fr");
+        Locale locFR = Locale.forLanguageTag("de-Germany");
 
         NumberFormat numberFormat1 = NumberFormat.getInstance();
-        System.out.println("Число в текущей локали: " + numberFormat1.format(number));
+        System.out.println("Number in current locale:" + numberFormat1.format(number));
 
         NumberFormat numberFormat2 = NumberFormat.getInstance(locFR);
-        System.out.println("Число во французской локали: " + numberFormat2.format(number));
-
-        NumberFormat numberFormat3 = NumberFormat.getCurrencyInstance();
-        System.out.println("Денежная единица в текущей локали: " + numberFormat3.format(number));
-
-        NumberFormat numberFormat4 = NumberFormat.getCurrencyInstance(locFR);
-        System.out.println("Денежная единица во французской локали: " + numberFormat4.format(number));
-
+        System.out.println("Number in German locale:" + numberFormat2.format(number));
+        System.out.println();
         NumberFormat numberFormat5 = NumberFormat.getPercentInstance();
-        System.out.println("Процент в текущей локали: " + numberFormat5.format(number));
+        System.out.println("Percentage in current locale:" + numberFormat5.format(number));
 
         NumberFormat numberFormat6 = NumberFormat.getPercentInstance(locFR);
-        System.out.println("Процент во французской локали: " + numberFormat6.format(number));
+        System.out.println("Percentage in German locale: " + numberFormat6.format(number));
     }
 }

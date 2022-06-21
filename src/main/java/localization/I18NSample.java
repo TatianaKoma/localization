@@ -10,11 +10,11 @@ public class I18NSample {
         String country;
 
         if (args.length != 2) {
-            language = new String("en");  //en de fr
-            country = new String("US");  //US DE FR
+            language = "fr";  //en de fr
+            country = "FR";  //US DE FR
         } else {
-            language = new String(args[0]);
-            country = new String(args[1]);
+            language = args[0];
+            country =args[1];
         }
 
         Locale currentLocale;
